@@ -1,19 +1,15 @@
 package com.company;
 
 public class Main {
+    private static int a = 0;
 
     public static void main(String[] args) {
-        Example01 example = new Example01();
-        example.print();
-        example.first('A');
-        example.print();
+        printNumber();
+        printNumber();
+        printNumber();
+    }
 
-        char [] ar = {'B'};
-        example.first(ar);
-        example.print();
-
-        ar = new char[]{'B','O','O','M'};
-        example.first(ar);
-        example.print();
+    private static void printNumber(){
+        System.out.println(a++);
     }
 }
